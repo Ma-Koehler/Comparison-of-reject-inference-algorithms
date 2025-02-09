@@ -37,7 +37,7 @@ The GitHub repository contains the data generation process as well as the implem
 
 ### Dependencies
 
-I use Python 3.12 in my macOS-environment. You can use my requirements.txt, but I mostly use standard librarys like Scikit-learn or imbalanced-learn.
+I use Python 3.12 in my macOS-environment. You can use my requirements.txt, but I mostly use standard librarys like Scikit-learn or imbalanced-learn, meaning you do not have to use the requirements.txt file.
 
 For the R implementations you need to install the package RSSL: https://cran.r-project.org/web/packages/RSSL/index.html.
 
@@ -55,14 +55,16 @@ pip install -r requirements.txt
 
 ### Preparing the data
 
-You first need to create the files "accepts_original.parquet" and "rejects_original.parquet" and if you follow the implementations and their order accordingly you can create the rest of the data yourself through the data generation process.
+
+The data is already available for all parts of the code. I used Git LFS for the large files. This means you don't have to run the code in the right order. Every code should function on it's own. But of course they might produce data and thus alter other files. 
+
+You can start with only the file "accepts_original.parquet" and "rejects_original.parquet" and if you follow the order you can create the rest of the data yourself through the implementations.
 
 First take a look at the "Data_Preprocessing.ipynb" file. There I use my original Lending Loan accepts and rejects and set them up for the data generation process. I also showcase their statistics and do statistical tests.
 
 In the data generation file "Data_Generation.ipynb" I rebalance my data and create an unbiased dataset from my accepts only. Thus we have synthetically generated accepts and rejects. I use the accepts as a baseline, then rebalance my data using SMOTE oversampling. After that I employ a scorecard to predict probabilities of default and assign my observations to accepts and rejects, where we know the true outcome loan_status. I also showcase their statistics and do some statistical analysis.
 
-Furthermore there is a small file "Coefficient_Analysis.ipynb" for the analysis of the coefficients of the accetps. This file showcases the unobserved variables and the correlation matrix used in the thesis. But this is not necessary for the reject inference models.
-There is also some R-Code used.
+Furthermore there is a small file "Coefficient_Analysis.ipynb" for the analysis of the coefficients of the accetps. This file showcases the unobserved variables and the correlation matrix used in the thesis.
 
 ### The used models
 
