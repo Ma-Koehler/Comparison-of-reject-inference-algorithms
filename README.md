@@ -8,9 +8,10 @@
 
 **2nd Examiner:** Prof. Dr. Matthias Weidlich
 
+These are my main results for the reject inference algorithms:
+
 <img width="1103" alt="Bildschirmfoto 2025-02-09 um 20 57 03" src="https://github.com/user-attachments/assets/416a025f-478f-4604-bf29-b1737839da0e" />
 
-![results](/result.png)
 
 ## Table of Content
 
