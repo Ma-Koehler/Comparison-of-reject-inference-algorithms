@@ -1,6 +1,6 @@
-# Title
+# A comparison of modern reject inference algorithms for synthetically created missing values in loan data
 
-**Type:** A comparison of modern reject inference algorithms for synthetically created missing values in loan data
+**Type:** Bachelor's thesis
 
 **Author:** Max Köhler
 
