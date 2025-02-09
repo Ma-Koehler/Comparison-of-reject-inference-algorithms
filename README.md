@@ -55,7 +55,7 @@ pip install -r requirements.txt
 
 ### Preparing the data
 
-You need to first create the files "accepts_original.parquet" and "rejects_original.parquet" and if you follow the implementations and their order accordingly you can create the rest of the data yourself through the data generation process.
+You first need to create the files "accepts_original.parquet" and "rejects_original.parquet" and if you follow the implementations and their order accordingly you can create the rest of the data yourself through the data generation process.
 
 First take a look at the "Data_Preprocessing.ipynb" file. There I use my original Lending Loan accepts and rejects and set them up for the data generation process. I also showcase their statistics and do statistical tests.
 
